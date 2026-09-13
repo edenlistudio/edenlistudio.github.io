@@ -1,0 +1,16 @@
+/* Standalone clone fixes: removes Weebly branding and keeps the original layout responsive. */
+.footer-ab-published-toast,
+.footer-ab-published-toast-container,
+#weebly-footer-signup-container-v3,
+.footer-wrap { display: none !important; }
+
+.wsite-section-bg-image { background-position: center center !important; }
+.wsite-youtube-container { position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+.wsite-youtube-container iframe { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+@media (max-width: 767px) {
+  .container { width: auto !important; max-width: 100%; padding-left: 20px; padding-right: 20px; }
+  .wsite-section-bg-image { min-height: 320px; height: auto !important; }
+  .wsite-multicol-col { display: block !important; width: 100% !important; padding: 0 0 28px !important; }
+  img { max-width: 100%; height: auto; }
+}
