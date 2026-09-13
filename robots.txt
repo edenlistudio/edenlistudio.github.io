@@ -1,4 +1,4 @@
-Sitemap: https://edenlistudio.weebly.com/sitemap.xml
+Sitemap: https://edenlistudio.github.io/sitemap.xml
 
 User-agent: NerdyBot
 Disallow: /
