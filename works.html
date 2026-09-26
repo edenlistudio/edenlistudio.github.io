@@ -1,0 +1,212 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VIDEO WORKS｜Eden Li</title><meta name="description" content="Eden Li 的導演、品牌影像、節目、紀實與社群影音作品。"><link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2326352f'/%3E%3Cpath d='M17 16h31v8H26v8h18v8H26v8h22v8H17z' fill='%23f3efe7'/%3E%3C/svg%3E"><link rel="stylesheet" href="style.css">
+<style>
+.video-modal{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:40px;
+  background:rgba(0,0,0,.94);
+}
+.video-modal.active{display:flex}
+.video-box{
+  width:min(1200px,92vw);
+  aspect-ratio:16/9;
+}
+.video-box iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+.video-close{
+  position:absolute;
+  top:18px;
+  right:24px;
+  border:0;
+  background:transparent;
+  color:#fff;
+  font-size:42px;
+  line-height:1;
+  cursor:pointer;
+}
+@media(max-width:600px){
+  .video-modal{padding:18px}
+  .video-box{width:100%}
+  .video-close{top:10px;right:14px;font-size:36px}
+}
+</style>
+
+<style>
+.portfolio-card .thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+</style>
+
+<style>
+/* 所有作品縮圖統一為 16:9 */
+.portfolio-card .thumb{
+  width:100%;
+  aspect-ratio:16 / 9 !important;
+  height:auto !important;
+  overflow:hidden;
+}
+.portfolio-card .thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+</style>
+<style>
+.portfolio-card .thumb{width:100%;aspect-ratio:16/9!important;height:auto!important;overflow:hidden;background:#111}
+.portfolio-card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.portfolio-card .work-credit{
+  margin-top:5px;
+  font-size:11px;
+  line-height:1.55;
+  color:#8f8980;
+  letter-spacing:.02em;
+}
+</style>
+</head><body><script src="menu.js" defer></script>
+<nav><div class="wrap nav"><a class="personal-brand" href="index.html"><img src="assets/images/profile.png" alt="Eden Li"><span><strong>EDEN LI</strong><span>DIRECTOR · DIGITAL CONTENT CREATOR</span></span></a><button class="mobile-menu-button" type="button" aria-expanded="false" aria-label="開啟導覽選單"><span></span><span></span><span></span></button><div class="links"><a href="index.html">ABOUT ME</a><a href="works.html" aria-current="page">VIDEO WORKS</a><a href="marketing.html">MARKETING PROJECT</a><a href="photo.html">PHOTO PORTFOLIO</a><a href="contact.html">CONTACT ME</a></div></div></nav>
+<main class="wrap"><header class="page-head"><div class="section-title">VIDEO WORKS</div><h1 class="page-title">動態影像作品</h1><p class="page-intro">從形象影片、品牌廣告、節目內容、人物紀實到短影音，能依據不同專案需求，提供完整的動態影像製作，讓品牌溝通更完整。</p>
+<div class="filters">
+<button class="filter active" data-filter="all">ALL</button>
+<button class="filter" data-filter="film">BRAND FILM</button>
+<button class="filter" data-filter="program">PROGRAM</button>
+<button class="filter" data-filter="documentary">DOCUMENTARY</button>
+<button class="filter" data-filter="social">SOCIAL</button>
+</div></header>
+<div class="portfolio-grid"><a class="portfolio-card" data-cat="film" href="#" data-video="80vWgHBJ8LM" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/80vWgHBJ8LM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/80vWgHBJ8LM/hqdefault.jpg';" alt="晶達光電"></div><div class="badge">BRAND FILM</div><h3>晶達光電</h3><p>品牌形象影片</p><div class="work-credit">Eden Li — Director / Producer<br><em>Production commissioned by 朵朵雲網絡行銷股份有限公司</em></div></a>
+<a class="portfolio-card" data-cat="film" href="#" data-video="YBZ07rEMenE" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/YBZ07rEMenE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/YBZ07rEMenE/hqdefault.jpg';" alt="A+Talents"></div><div class="badge">BRAND FILM</div><h3>A+Talents</h3><p>品牌形象影片</p><div class="work-credit">Eden Li — Director / Editor<br><em>In collaboration with 羅森視覺設計工作室</em></div></a>
+<a class="portfolio-card" data-cat="film" href="#" data-video="9Zd24Rcsfw0" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/9Zd24Rcsfw0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/9Zd24Rcsfw0/hqdefault.jpg';" alt="90分指紋登機箱"></div><div class="badge">BRAND FILM</div><h3>90分指紋登機箱</h3><p>品牌廣告</p><div class="work-credit">Eden Li — Director / Producer<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="film" href="#" data-video="KelzUtnlXEM" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/KelzUtnlXEM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/KelzUtnlXEM/hqdefault.jpg';" alt="Pet Marvel全自動貓砂盆"></div><div class="badge">BRAND FILM</div><h3>Pet Marvel全自動貓砂盆</h3><p>商品廣告</p><div class="work-credit">Eden Li — Director / Producer<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="film" href="#" data-video="A-Qp07r4C6s" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/A-Qp07r4C6s/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/A-Qp07r4C6s/hqdefault.jpg';" alt="蒸eye按摩儀"></div><div class="badge">BRAND FILM</div><h3>蒸eye按摩儀</h3><p>商品廣告</p><div class="work-credit">Eden Li — Director / Producer<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="film" href="#" data-video="A3l5PwA3IJ8" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/A3l5PwA3IJ8/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/A3l5PwA3IJ8/hqdefault.jpg';" alt="雲林蜜蜂故事館"></div><div class="badge">BRAND FILM</div><h3>雲林蜜蜂故事館</h3><p>宣傳影片</p><div class="work-credit">Eden Li — Director / Producer<br><em>Production commissioned by 財團法人中衛發展中心</em></div></a>
+<a class="portfolio-card" data-cat="film" href="#" data-video="BJd-SMZyRT8" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/BJd-SMZyRT8/hqdefault.jpg" alt="KOKOMO充氣泵"></div><div class="badge">BRAND FILM</div><h3>KOKOMO充氣泵</h3><p>品牌廣告</p><div class="work-credit">Eden Li — Director / Producer<br><em>Production commissioned by 東朱數位行銷股份有限公司</em></div></a>
+<a class="portfolio-card" data-cat="film" href="#" data-video="9VhcHhNSHsA" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/9VhcHhNSHsA/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/9VhcHhNSHsA/hqdefault.jpg';" alt="這球歌唱專門學院"></div><div class="badge">BRAND FILM</div><h3>這球歌唱專門學院</h3><p>品牌廣告</p><div class="work-credit">Eden Li — Director / Producer<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="film" href="#" data-video="gbqlhS2toF8" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/gbqlhS2toF8/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/gbqlhS2toF8/hqdefault.jpg';" alt="Cake求職平台"></div><div class="badge">BRAND FILM</div><h3>Cake求職平台</h3><p>企業形象影片</p><div class="work-credit">Eden Li — Director / Producer / Editor<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="program" href="#" data-video="IvzemS0Z-40" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/IvzemS0Z-40/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/IvzemS0Z-40/hqdefault.jpg';" alt="理想訊號"></div><div class="badge">PROGRAM</div><h3>理想訊號</h3><p>影音節目</p><div class="work-credit">Eden Li — Director / Editor<br><em>Production commissioned by 思哈股份有限公司</em></div></a>
+<a class="portfolio-card" data-cat="program" href="#" data-video="hBEQr0IEIoo" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/hBEQr0IEIoo/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/hBEQr0IEIoo/hqdefault.jpg';" alt="蘿琳雅塑身衣"></div><div class="badge">PROGRAM</div><h3>蘿琳雅塑身衣</h3><p>影音節目</p><div class="work-credit">Eden Li — Director / Producer<br><em>Production commissioned by 朵朵雲網絡行銷股份有限公司</em></div></a>
+<a class="portfolio-card" data-cat="program" href="#" data-video="d4Jn4B5WI8o" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/d4Jn4B5WI8o/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/d4Jn4B5WI8o/hqdefault.jpg';" alt="米食文化共學"></div><div class="badge">PROGRAM</div><h3>米食文化共學</h3><p>影音節目</p><div class="work-credit">Eden Li — Director / Producer<br><em>Production commissioned by 財團法人中衛發展中心</em></div></a>
+<a class="portfolio-card" data-cat="program" href="#" data-video="f0ThISihZB0" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://i.ytimg.com/vi/f0ThISihZB0/hqdefault.jpg" alt="誰來吃蛋糕" loading="lazy"></div><div class="badge">PROGRAM</div><h3>誰來吃蛋糕</h3><p>影音節目</p><div class="work-credit">Eden Li — Director / Producer<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="program" href="#" data-video="SpLC4ztuDug" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/SpLC4ztuDug/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/SpLC4ztuDug/hqdefault.jpg';" alt="悄悄對你說"></div><div class="badge">PROGRAM</div><h3>悄悄對你說</h3><p>影音節目</p><div class="work-credit">Eden Li — Director / Producer<br><em>Production commissioned by 社團法人雲林縣聽語障福利協進會</em></div></a>
+<a class="portfolio-card" data-cat="program" href="#" data-video="wo1KiNd_kZU" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/wo1KiNd_kZU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/wo1KiNd_kZU/hqdefault.jpg';" alt="米粉的故事"></div><div class="badge">PROGRAM</div><h3>米粉的故事</h3><p>影音節目</p><div class="work-credit">Eden Li — Director / Producer<br><em>Production commissioned by 財團法人中衛發展中心</em></div></a>
+<a class="portfolio-card" data-cat="program" href="#" data-video="_RbxK1XSisU" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/_RbxK1XSisU/hqdefault.jpg" alt="大漢酵素"></div><div class="badge">PROGRAM</div><h3>大漢酵素</h3><p>影音節目</p><div class="work-credit">Eden Li — Director / Cinematographer / Editor<br><em>Production commissioned by 朵朵雲網絡行銷股份有限公司</em></div></a>
+<a class="portfolio-card" data-cat="documentary" href="#" data-video="9VEQbIUOM2c" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/9VEQbIUOM2c/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/9VEQbIUOM2c/hqdefault.jpg';" alt="台北偶戲館"></div><div class="badge">DOCUMENTARY</div><h3>台北偶戲館</h3><p>紀實影片</p><div class="work-credit">Eden Li — Director / Producer<br><em>VeriLight Creative Production</em></div></a>
+<a class="portfolio-card" data-cat="documentary" href="#" data-video="zlgJWUJyveU" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/zlgJWUJyveU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/zlgJWUJyveU/hqdefault.jpg';" alt="馬戲之門"></div><div class="badge">DOCUMENTARY</div><h3>馬戲之門</h3><p>紀實影片</p><div class="work-credit">Eden Li — Director / Producer<br><em>VeriLight Creative Production</em></div></a>
+<a class="portfolio-card" data-cat="documentary" href="#" data-video="ohU6GLHaDxs" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/ohU6GLHaDxs/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/ohU6GLHaDxs/hqdefault.jpg';" alt="雲林聽語障福利協進會"></div><div class="badge">DOCUMENTARY</div><h3>雲林聽語障福利協進會</h3><p>紀實影片</p><div class="work-credit">Eden Li — Director / Producer<br><em>Production commissioned by 社團法人雲林縣聽語障福利協進會</em></div></a>
+<a class="portfolio-card" data-cat="documentary" href="#" data-video="0O_Sd57m4yE" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/0O_Sd57m4yE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/0O_Sd57m4yE/hqdefault.jpg';" alt="在凝視之外的光"></div><div class="badge">DOCUMENTARY</div><h3>在凝視之外的光</h3><p>紀錄片</p><div class="work-credit">Eden Li — Director / Producer<br><em>VeriLight Creative Production</em></div></a>
+<a class="portfolio-card" data-cat="documentary" href="#" data-video="h3wVwJ8ZOec" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/h3wVwJ8ZOec/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/h3wVwJ8ZOec/hqdefault.jpg';" alt="靈魂創業學"></div><div class="badge">DOCUMENTARY</div><h3>靈魂創業學</h3><p>活動紀錄</p><div class="work-credit">Eden Li — Cinematographer / Editor<br><em>Production commissioned by 艾影企業有限公司</em></div></a>
+<a class="portfolio-card" data-cat="documentary" href="#" data-video="hdxoEYqCLCs" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/hdxoEYqCLCs/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/hdxoEYqCLCs/hqdefault.jpg';" alt="Black Shark X Wirforce"></div><div class="badge">DOCUMENTARY</div><h3>Black Shark X Wirforce</h3><p>活動紀錄</p><div class="work-credit">Eden Li — Cinematographer / Editor<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="documentary" href="#" data-video="3hPlPTn5mIQ" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/3hPlPTn5mIQ/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/3hPlPTn5mIQ/hqdefault.jpg';" alt="HeyPlus手錶記者會"></div><div class="badge">DOCUMENTARY</div><h3>HeyPlus手錶記者會</h3><p>活動紀錄</p><div class="work-credit">Eden Li — Cinematographer / Editor<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="documentary" href="#" data-video="OL0rRG_YI0I" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/OL0rRG_YI0I/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/OL0rRG_YI0I/hqdefault.jpg';" alt="PET MAEVEL寵物展"></div><div class="badge">DOCUMENTARY</div><h3>PET MAEVEL寵物展</h3><p>活動紀錄</p><div class="work-credit">Eden Li — Cinematographer / Editor<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="social" href="#" data-video="GHe_y1q8GEU" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/GHe_y1q8GEU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/GHe_y1q8GEU/hqdefault.jpg';" alt="90分指紋登機箱"></div><div class="badge">SOCIAL</div><h3>90分指紋登機箱</h3><p>社群廣告</p><div class="work-credit">Eden Li — Director / Producer<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="social" href="#" data-video="upHxxr8z16k" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/upHxxr8z16k/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/upHxxr8z16k/hqdefault.jpg';" alt="Carlsberg啤酒"></div><div class="badge">SOCIAL</div><h3>Carlsberg啤酒</h3><p>社群廣告</p><div class="work-credit">Eden Li — Director / Producer<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="social" href="#" data-video="zxRG7nOXUhE" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/zxRG7nOXUhE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/zxRG7nOXUhE/hqdefault.jpg';" alt="SEEMAGIC 磨法指甲刀"></div><div class="badge">SOCIAL</div><h3>SEEMAGIC 磨法指甲刀</h3><p>社群廣告</p><div class="work-credit">Eden Li — Director / Cinematographer / Editor<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="social" href="#" data-video="1UhqDGS4hX4" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/1UhqDGS4hX4/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/1UhqDGS4hX4/hqdefault.jpg';" alt="掌上小颶風"></div><div class="badge">SOCIAL</div><h3>掌上小颶風</h3><p>社群廣告</p><div class="work-credit">Eden Li — Director / Cinematographer / Editor<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="social" href="#" data-video="nqWyJLF89uI" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/nqWyJLF89uI/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/nqWyJLF89uI/hqdefault.jpg';" alt="DILLER 鋼蓋保溫杯"></div><div class="badge">SOCIAL</div><h3>DILLER 鋼蓋保溫杯</h3><p>社群廣告</p><div class="work-credit">Eden Li — Director / Cinematographer / Editor<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="social" href="#" data-video="ayPQAhp9p4Y" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/ayPQAhp9p4Y/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/ayPQAhp9p4Y/hqdefault.jpg';" alt="光寶科技"></div><div class="badge">SOCIAL</div><h3>光寶科技</h3><p>社群短影音</p><div class="work-credit">Eden Li — Director / Producer / Cinematographer / Editor<br><em>Produced during previous employment</em></div></a>
+<a class="portfolio-card" data-cat="social" href="#" data-video="VPBM1FZNRtE" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/VPBM1FZNRtE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/VPBM1FZNRtE/hqdefault.jpg';" alt="Whosecall"></div><div class="badge">SOCIAL</div><h3>Whosecall</h3><p>社群短影音</p><div class="work-credit">Eden Li — Director / Editor<br><em>Production commissioned by 走著瞧股份有限公司</em></div></a>
+<a class="portfolio-card" data-cat="social" href="#" data-video="L87JHJxrx5g" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/L87JHJxrx5g/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/L87JHJxrx5g/hqdefault.jpg';" alt="慕尚石材美學館"></div><div class="badge">SOCIAL</div><h3>慕尚石材美學館</h3><p>社群短影音</p><div class="work-credit">Eden Li — Director / Producer<br><em>Production commissioned by 至遠國際股份有限公司</em></div></a>
+<a class="portfolio-card" data-cat="social" href="#" data-video="0QrHUjQSfCc" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/0QrHUjQSfCc/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/0QrHUjQSfCc/hqdefault.jpg';" alt="台灣菸酒主題館"></div><div class="badge">SOCIAL</div><h3>台灣菸酒主題館</h3><p>社群短影音</p><div class="work-credit">Eden Li — Director / Editor<br><em>In collaboration with 格局數位有限公司</em></div></a>
+<a class="portfolio-card" data-cat="social" href="#" data-video="Y4qQDqFQwNU" onclick="openVideo(this.dataset.video); return false;"><div class="thumb"><img src="https://img.youtube.com/vi/Y4qQDqFQwNU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://img.youtube.com/vi/Y4qQDqFQwNU/hqdefault.jpg';" alt="黑柔濾鏡"></div><div class="badge">SOCIAL</div><h3>黑柔濾鏡</h3><p>社群短影音</p><div class="work-credit">Eden Li — Director / Producer<br><em>VeriLight Creative Production</em></div></a></div></main>
+<footer><div class="wrap"><div class="footer-grid"><div><div class="footer-brand"><img src="assets/images/profile.png" alt="" style="width:38px;height:38px;border-radius:50%;object-fit:cover"><div><strong>EDEN LI</strong><br><span>DIRECTOR · DIGITAL CONTENT CREATOR</span></div></div></div><div class="footer-col"><h4>NAVIGATION</h4><a href="index.html">ABOUT ME</a><a href="works.html">VIDEO WORKS</a><a href="marketing.html">MARKETING</a><a href="photo.html">PHOTO PORTFOLIO</a></div><div class="footer-col"><h4>SELF MEDIA</h4><a href="https://www.instagram.com/edenli_film" target="_blank" rel="noopener">EDENLI_FILM</a><a href="https://linktr.ee/earlymorninglight" target="_blank" rel="noopener">初晨微光</a></div><div class="footer-col"><h4>FOLLOW</h4><a href="https://www.instagram.com/edenli_film" target="_blank" rel="noopener">INSTAGRAM</a><a href="https://www.youtube.com/playlist?list=PL-fV4_aKI3h3n84CEd8CpeJ_PsMr1z1OK" target="_blank" rel="noopener">YOUTUBE</a></div><div class="footer-col"><h4>CONTACT</h4><a href="mailto:edenlistudio@gmail.com">EMAIL</a></div></div><div class="copyright">© 2026 EDEN LI. ALL RIGHTS RESERVED.</div></div></footer>
+<script>
+const buttons=[...document.querySelectorAll('.filter')];
+const cards=[...document.querySelectorAll('.portfolio-card')];
+const creditByWork={
+  'film|晶達光電':'Eden Li — Director / Producer / Editor',
+  'film|A+Talents':'Eden Li — Director / Editor',
+  'film|90分指紋登機箱':'Eden Li — Director / Producer / Editor',
+  'film|Pet Marvel全自動貓砂盆':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'film|蒸eye按摩儀':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'film|雲林蜜蜂故事館':'Eden Li — Director / Producer / Editor',
+  'film|KOKOMO充氣泵':'Eden Li — Director / Producer / Editor',
+  'film|這球歌唱專門學院':'Eden Li — Director / Producer / Editor',
+  'film|Cake求職平台':'Eden Li — Director / Producer / Editor',
+  'program|理想訊號':'Eden Li — Director / Cinematographer / Editor',
+  'program|蘿琳雅塑身衣':'Eden Li — Director / Producer / Editor',
+  'program|米食文化共學':'Eden Li — Director / Producer / Editor',
+  'program|誰來吃蛋糕':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'program|悄悄對你說':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'program|米粉的故事':'Eden Li — Director / Producer / Editor',
+  'program|大漢酵素':'Eden Li — Director / Cinematographer / Editor',
+  'documentary|台北偶戲館':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'documentary|馬戲之門':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'documentary|雲林聽語障福利協進會':'Eden Li — Director / Producer / Editor',
+  'documentary|在凝視之外的光':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'documentary|靈魂創業學':'Eden Li — Cinematographer / Editor',
+  'documentary|Black Shark X Wirforce':'Eden Li — Cinematographer / Editor',
+  'documentary|HeyPlus手錶記者會':'Eden Li — Cinematographer / Editor',
+  'documentary|PET MAEVEL寵物展':'Eden Li — Cinematographer / Editor',
+  'social|90分指紋登機箱':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'social|Carlsberg啤酒':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'social|SEEMAGIC 磨法指甲刀':'Eden Li — Director / Cinematographer / Editor',
+  'social|掌上小颶風':'Eden Li — Director / Cinematographer / Editor',
+  'social|DILLER 鋼蓋保溫杯':'Eden Li — Director / Cinematographer / Editor',
+  'social|光寶科技':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'social|Whosecall':'Eden Li — Director / Editor',
+  'social|慕尚石材美學館':'Eden Li — Director / Producer / Cinematographer / Editor',
+  'social|台灣菸酒主題館':'Eden Li — Director / Editor',
+  'social|黑柔濾鏡':'Eden Li — Director / Producer / Cinematographer / Editor'
+};
+cards.forEach(card=>{
+  const key=card.dataset.cat+'|'+card.querySelector('h3').textContent.trim();
+  const credit=card.querySelector('.work-credit');
+  if(creditByWork[key]&&credit.firstChild) credit.firstChild.nodeValue=creditByWork[key];
+});
+buttons.forEach(btn=>btn.addEventListener('click',()=>{
+  buttons.forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const f=btn.dataset.filter;
+  cards.forEach(c=>c.classList.toggle('hidden',!(f==='all'||c.dataset.cat===f)));
+}));
+</script>
+<div id="videoModal" class="video-modal" onclick="closeVideo()">
+  <button class="video-close" type="button" aria-label="關閉影片" onclick="closeVideo()">×</button>
+  <div class="video-box" onclick="event.stopPropagation()">
+    <iframe
+      id="youtubePlayer"
+      src=""
+      referrerpolicy="strict-origin-when-cross-origin"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<script>
+function openVideo(videoId){
+  if(!videoId || videoId.startsWith('YOUR_YOUTUBE_ID_')){
+    alert('這個作品還沒有設定 YouTube 影片 ID。');
+    return;
+  }
+  const modal = document.getElementById('videoModal');
+  const player = document.getElementById('youtubePlayer');
+  player.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0';
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeVideo(){
+  const modal = document.getElementById('videoModal');
+  const player = document.getElementById('youtubePlayer');
+  modal.classList.remove('active');
+  player.src = '';
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape') closeVideo();
+});
+</script>
+</body></html>
